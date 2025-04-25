@@ -1,7 +1,15 @@
  class CustomHashSet<K> {
       /**
       * CustomHashSet:
-      * Internally uses a CustomHashMap for storing objects in a provided key associated with a dummy object
+      * CustomHashSet class internally uses a CustomHashMap for backup storing like ArrayList uses internally array
+      * Uses:
+      * -> Allows only unique elements duplicates are not allowed
+      * -> Provide constant-time performance for basic operations (such as add, remove, contains, size,etc.)
+      * Operations:
+      * -> add(E): Add new Object into a HashSet and duplicates are not allowed
+      * -> remove(E): Remove an Object from a HashSet only if exists
+      * -> contains(E): Checks if an object is in a HashSet or not
+      * -> size(): Return a size of a HashSet
       */
       private CustomHashMap<K, Object> map;
       private final Object PRESENT;

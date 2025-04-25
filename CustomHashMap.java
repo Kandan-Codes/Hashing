@@ -3,6 +3,19 @@ import java.util.LinkedList;
 import java.util.List;
 
 class CustomHashMap<K, V> {
+     /**
+     * CustomHashMap for storing and handling key-value pairs in a structured format
+     * Uses:
+     * -> Allows only unique keys and duplicate keys are not allowed
+     * -> Separate chaining with LinkedList to handling collissions happening 
+     * -> Assuming hash function distribute elements evenly
+     * Operations:
+     * -> put(K,V): Store key-value pair in a HashMap if key doesn't exists already
+     * -> remove(K): Removes a key from a HashMap only if key already exists
+     * -> get(K): Get a value from a HashMap associated with a Key
+     * -> containsKey(K): Checks if key is exists already or not
+     * -> keySet(): Get all keys from a HashMap
+     */
      private class Node<K, V> {
           K key;
           V value;
